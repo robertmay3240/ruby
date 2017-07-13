@@ -1,10 +1,6 @@
-def count(number)
-	print number
-end 
-
-counter = 1+1
-100. times do 
-	count(number)
-end 
-	
-
+    (1..100).each{|i|
+      x = ''
+      x += 'Fizz' if i%3==0
+      x += 'Buzz' if i%5==0
+      puts(x.empty? ? i : x);
+    }
